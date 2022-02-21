@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,700;1,300;1,400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Nunito+Sans:ital,wght@0,700;1,300;1,400&family=Pacifico&display=swap');
+*{
+    font-family: Nunito Sans;
+}
+body{
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(270deg, #dbffb5 0, #e0ffa5 7.14%, #e4f894 14.29%, #e8ee83 21.43%, #ece272 28.57%, #eed460 35.71%, #f1c54e 42.86%, #f2b53c 50%, #f3a42c 57.14%, #f69221 64.29%, #f8811d 71.43%, #fb6f1f 78.57%, #fd5c26 85.71%, #ff4730 92.86%, #ff2e3b 100%);
+}
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    background-color: #e8ee83;
+    
+}
+.nav-h1{
+    margin-left: 3.5%;
+    font-family: pacifico;
+}
+.lista-nav{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 2.5%;
+    margin-right: 39.5%;
+}
+li{
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.links-nav1{
+    font-weight:bold;
+    color: rgb(19, 19, 19);
+    font-size: 18px;
+    text-decoration: none;
+    background-color: #fd5c26;
+    padding: 10px;
+    border-radius: 10px;
+    
+
+}
+.links-nav2{
+    font-weight:bold;
+    color: rgb(19, 19, 19);
+    font-size: 18px;
+    text-decoration: none;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+.links-nav4{
+    font-weight:bold;
+    color: rgb(19, 19, 19);
+    font-size: 18px;
+    text-decoration: none;
+    background-color: #fd5c26;
+    padding: 10px;
+    border-radius: 10px;
+}
+.links-nav3{
+    font-weight:bold;
+    color: rgb(19, 19, 19);
+    font-size: 18px;
+    text-decoration: none;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.container{
+    background-color: #fd5c26;
+    width: 40%;
+    padding: 50px;
+    margin-left: 25%;   
+   margin-top: 7%;
+   border-radius: 2%;
+    
+}
+textarea{
+    border: 1px solid black;
+    border-radius: 3%; 
+}
+
+.textareas-container{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.input-textarea{
+    margin-top: -4.5%;
+}
+#nome-receita{
+    border: none;
+    outline: none;
+    background-color: #fd5c26;
+    color: black;
+}
+#nome-receita::placeholder{
+    color: black;
+   
+}
+#igredientes{
+height: 85%;
+}
+#igredientes::placeholder{
+    color: black;
+    
+}
+#igredientes-aparecer{
+    height: 85%;
+}
+#igredientes-aparecer::placeholder{
+    color: black;
+}
+#modo-preparo::placeholder{
+    color: black;
+}
+.salvar-receita{
+    margin-left: 80%;
+    margin-top: 5%;
+    margin-bottom: -7%;
+    padding: 1.5%;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    }
+
+    .salvar-receita:hover{
+        border: 1px solid #fd5c26;
+        background-color: #f2b53c;
+    }
+#procurar-receita{
+    border: none;
+    outline: none;
+    background-color: #fd5c26;
+    color: black;
+}
+#procurar-receita::placeholder{
+    color: black;
+}
