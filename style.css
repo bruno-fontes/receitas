@@ -102,10 +102,10 @@ textarea{
     color: black;
    
 }
-#igredientes{
+#ingredientes{
 height: 85%;
 }
-#igredientes::placeholder{
+#ingredientes::placeholder{
     color: black;
     
 }
