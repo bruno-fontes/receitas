@@ -109,10 +109,10 @@ height: 85%;
     color: black;
     
 }
-#igredientes-aparecer{
+#ingredientes-aparecer{
     height: 85%;
 }
-#igredientes-aparecer::placeholder{
+#ingredientes-aparecer::placeholder{
     color: black;
 }
 #modo-preparo::placeholder{
