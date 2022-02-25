@@ -1,13 +1,13 @@
 let nomeReceita = document.getElementById('nome-receita')
 let ingredientes = document.getElementById('ingredientes')
 let modoPreparo = document.getElementById('modo-preparo')
-let pesquisarReceitas = document.getElementById('procurar-receita')
+let procurarReceitas = document.getElementById('procurar-receita')
 let nomeReceitaArray = []
 let modoPreparoArray = []
 let ingredientesArray = []
 let modoPreparoAparecer = document.getElementById('modo-preparo-aparecer')
 let ingredientesAparecer = document.getElementById('ingredientes-aparecer')
-let posiçao = ""
+let posicao = ""
 let encontrou = ""
 
 
@@ -44,7 +44,7 @@ function salvarReceita() {
     }
 }
 
-function pesquisarReceita(params) {
+function pesquisarReceita() {
 
     let encontrou = 0
     nomeReceitaArray = JSON.parse(localStorage.getItem('nome-receita-chave'))
@@ -52,23 +52,17 @@ function pesquisarReceita(params) {
     ingredientesArray = JSON.parse(localStorage.getItem('ingredientes-chave'))
 
     for (let i = 0; i < nomeReceitaArray.length; i++) {
-        if (pesquisarReceita.value == nomeReceitaArray[i])
+        if (procurarReceitas.value == nomeReceitaArray[i]){
             encontrou = 1
-            posiçao = i
-
-        if (encontrou == 1)
-        ewqe
-       document.getElementById('ingredientes-aparecer').innerHTML = ingredientesArray[i]
-    }  
-    for (let i = 0; i < nomeReceitaArray.length; i++) {
-        if (pesquisarReceita.value == nomeReceitaArray[i])
-            encontrou = 1
-            posiçao = i
-
-        if (encontrou == 1)
-        eqweqw
-        document.getElementById('modo-preparo-aparecer').innerHTML = modoPreparoArray[i]   
-}
-
+            posicao = i
+        }
+    }
+   
+    if (encontrou == 1){
+        document.getElementById('ingredientes-aparecer').innerHTML = ingredientesArray[posicao]
+        document.getElementById('modo-preparo-aparecer').innerHTML = modoPreparoArray[posicao]; 
+    }else{
+        alert('Receita não encontrada');
+    }
 }
 
