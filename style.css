@@ -1,35 +1,43 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,700;1,300;1,400&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Nunito+Sans:ital,wght@0,700;1,300;1,400&family=Pacifico&display=swap');
-*{
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: Nunito Sans;
-}
-body{
-  margin: 0;
-  padding: 0;
-  background-image: linear-gradient(270deg, #dbffb5 0, #e0ffa5 7.14%, #e4f894 14.29%, #e8ee83 21.43%, #ece272 28.57%, #eed460 35.71%, #f1c54e 42.86%, #f2b53c 50%, #f3a42c 57.14%, #f69221 64.29%, #f8811d 71.43%, #fb6f1f 78.57%, #fd5c26 85.71%, #ff4730 92.86%, #ff2e3b 100%);
-}
-.nav-container{
+  }
+
+.nav-container {
     display: flex;
-    justify-content: space-between;
+    height: 13vh;
+    align-items: center;
     background-color: #e8ee83;
-    
+    width: 100%;
+    justify-content: space-around;
 }
-.nav-h1{
-    margin-left: 3.5%;
+.nav-h1 {
     font-family: pacifico;
 }
-.lista-nav{
+.lista-nav {
     list-style: none;
     display: flex;
+    justify-content: space-around;
+    width: 410px;
+    height: 13vh;
+    align-items: center;
+}
+.div-principal {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    background-image: linear-gradient(270deg, #dbffb5 0, #e0ffa5 7.14%, #e4f894 14.29%, #e8ee83 21.43%, #ece272 28.57%, #eed460 35.71%, #f1c54e 42.86%, #f2b53c 50%, #f3a42c 57.14%, #f69221 64.29%, #f8811d 71.43%, #fb6f1f 78.57%, #fd5c26 85.71%, #ff4730 92.86%, #ff2e3b 100%);
+    align-items: center;
     justify-content: center;
-    margin-top: 2.5%;
-    margin-right: 39.5%;
 }
-li{
-    display: inline-block;
-    margin-left: 20px;
-}
+
 
 .links-nav1{
     font-weight:bold;
@@ -70,18 +78,13 @@ li{
     border-radius: 10px;
 }
 
-.container{
+.container {
     background-color: #fd5c26;
-    width: 40%;
-    padding: 50px;
-    margin-left: 25%;   
-   margin-top: 7%;
-   border-radius: 2%;
-    
+    width: 583px;
+    height: 55vh;
 }
 textarea{
     border: 1px solid black;
-    border-radius: 3%; 
 }
 
 .textareas-container{
@@ -121,15 +124,12 @@ height: 85%;
 #modo-preparo-aparecer::placeholder{
     color: black;
 }
-.salvar-receita{
-    margin-left: 80%;
-    margin-top: 5%;
-    margin-bottom: -7%;
-    padding: 1.5%;
+.salvar-receita {
+    padding: 8px;
     border: 1px solid black;
     border-radius: 5px;
     cursor: pointer;
-    }
+}
 
     .salvar-receita:hover{
         border: 1px solid #fd5c26;
