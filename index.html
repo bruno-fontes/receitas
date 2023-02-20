@@ -20,12 +20,31 @@
                 <a class="links-nav2" href="pesquisar-receita.html">Procurar Receita</a>
             </li>
         </ul>
+        <button onclick="abrirModal()" class="receitas-hamburguer">
+            <span class="child-1"></span>
+            <span class="child-2"></span>
+            <span class="child-3"></span>
+        </button>
+        <div class="div-mobile-lista-nav" id="div-mobile-lista-nav">
+            <a class="links-nav1" href="index.html">Escrever Receitas</a>
+            <a class="links-nav2" href="pesquisar-receita.html">Procurar Receita</a>
+            <div class="div-align-btn-voltar">
+                <button onclick="fecharModal()" class="btn-voltar-modal">
+                    Voltar
+                </button>
+            </div>
+        </div>
     </div>
     <div class="div-principal">
         <div class="container">
-            <div class="textareas-container">
-                <textarea placeholder="Ingredientes:"></textarea>
-                <textarea placeholder="Modo de Preparo:"></textarea>
+            <div class="div-input-textsareas">
+                <div class="div-align-input">
+                    <input type="text" id="nome-receita" placeholder="Nome da Receita:">
+                </div>
+                <div class="textareas-container">
+                    <textarea placeholder="Ingredientes:" id="ingredientes"></textarea>
+                    <textarea placeholder="Modo de Preparo:" id="modo-preparo"></textarea>
+                </div>
             </div>
             <div class="div-align-btn">
                 <button class="salvar-receita" onclick="salvarReceita()">Salvar Receita</button>

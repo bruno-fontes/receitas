@@ -18,18 +18,36 @@
                 <a class="links-nav4" href="pesquisar-receita.html">Procurar Receita</a>
             </li>
         </ul>
-    </div>
-    <div class="container">
-
-        <div class="textareas-container">
-            <div class="input-textarea">
-                <input type="text" id="procurar-receita" placeholder="Pesquisar Receita:"><br>
-                <textarea name="text-container1" id="ingredientes-aparecer" cols="30" rows="10"
-                    placeholder="Ingredientes:" readonly></textarea>
+        <button onclick="abrirModal()" class="receitas-hamburguer">
+            <span class="child-1"></span>
+            <span class="child-2"></span>
+            <span class="child-3"></span>
+        </button>
+        <div class="div-mobile-lista-nav" id="div-mobile-lista-nav">
+            <a class="links-nav3" href="index.html">Escrever Receitas</a>
+            <a class="links-nav4" href="pesquisar-receita.html">Procurar Receita</a>
+            <div class="div-align-btn-voltar">
+                <button onclick="fecharModal()" class="btn-voltar-modal">
+                    Voltar
+                </button>
             </div>
-            <textarea name="text-container2" id="modo-preparo-aparecer" cols="30" rows="10"placeholder="Modo de Preparo:" readonly></textarea>
         </div>
-        <button type="button" onclick="pesquisarReceita()" class="salvar-receita">Pesquisar Receita</button>
+    </div>
+    <div class="div-principal">
+        <div class="container">
+            <div class="div-input-textsareas">
+                <div class="div-align-input">
+                    <input type="text" id="procurar-receita" placeholder="Nome da Receita:">
+                </div>
+                <div class="textareas-container">
+                    <textarea placeholder="Ingredientes:" id="ingredientes-aparecer"></textarea>
+                    <textarea placeholder="Modo de Preparo:" id="modo-preparo-aparecer"></textarea>
+                </div>
+            </div>
+            <div class="div-align-btn">
+                <button class="salvar-receita" onclick="pesquisarReceita()">Pesquisar Receita</button>
+            </div>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>

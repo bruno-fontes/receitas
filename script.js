@@ -9,6 +9,7 @@ let modoPreparoAparecer = document.getElementById('modo-preparo-aparecer')
 let ingredientesAparecer = document.getElementById('ingredientes-aparecer')
 let posicao = ""
 let encontrou = ""
+let abrir = 0 
 
 
 
@@ -65,4 +66,16 @@ function pesquisarReceita() {
         alert('Receita não encontrada');
     }
 }
-
+const abrirModal = () =>{
+    let modal = document.getElementById('div-mobile-lista-nav')
+    if(modal.style.display = 'none'){
+        modal.style.display = 'flex'
+    }
+}
+const fecharModal = () =>{
+    abrir = 1
+    let modal = document.getElementById('div-mobile-lista-nav')
+    if(abrir = 1){
+        modal.style.display = 'none'
+    }
+}

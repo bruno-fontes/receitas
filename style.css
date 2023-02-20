@@ -28,6 +28,46 @@
     height: 13vh;
     align-items: center;
 }
+.receitas-hamburguer {
+    height: 34px;
+    border: none;
+    display: none;
+    background: #e8ee83;
+}
+.child-1{
+    width: 30px;
+    height: 4px;
+    background: #000;
+    display: block;
+    margin: 5px 0;
+}
+.child-2{
+    width: 30px;
+    height: 4px;
+    background: #000;
+    display: block;
+    margin: 5px 0;
+}
+.child-3{
+    width: 30px;
+    height: 4px;
+    background: #000;
+    display: block;
+    margin: 5px 0;
+}
+.div-mobile-lista-nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    background: #e8ee83;
+    height: 26vh;
+    top: 80px;
+    right: 0%;
+    width: 196px;
+    justify-content: center;
+    gap: 15px;
+    align-items: center;
+}
 .div-principal {
     margin: 0;
     padding: 0;
@@ -37,27 +77,44 @@
     align-items: center;
     justify-content: center;
 }
+.btn-voltar-modal {
+    font-weight: bold;
+    color: rgb(19, 19, 19);
+    text-decoration: none;
+    background-color: white;
+    border-radius: 10px;
+    width: 101.52px;
+    height: 27px;
+    border: none;
+}
+.div-align-btn-voltar {
+    width: 83%;
+    display: flex;
+    justify-content: flex-end;
+}
 
 
-.links-nav1{
-    font-weight:bold;
+.links-nav1 {
+    font-weight: bold;
     color: rgb(19, 19, 19);
     font-size: 18px;
     text-decoration: none;
     background-color: #fd5c26;
     padding: 10px;
     border-radius: 10px;
-    
-
+    width: 165.52px;
+    height: 44px;
 }
-.links-nav2{
-    font-weight:bold;
+.links-nav2 {
+    font-weight: bold;
     color: rgb(19, 19, 19);
     font-size: 18px;
     text-decoration: none;
     background-color: white;
     padding: 10px;
     border-radius: 10px;
+    width: 165.52px;
+    height: 44px;
 }
 .links-nav4{
     font-weight:bold;
@@ -67,6 +124,8 @@
     background-color: #fd5c26;
     padding: 10px;
     border-radius: 10px;
+    width: 165.52px;
+    height: 44px;
 }
 .links-nav3{
     font-weight:bold;
@@ -75,6 +134,8 @@
     text-decoration: none;
     background-color: white;
     padding: 10px;
+    width: 165.52px;
+    height: 44px;
     border-radius: 10px;
 }
 
@@ -82,48 +143,47 @@
     background-color: #fd5c26;
     width: 583px;
     height: 55vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
 }
-textarea{
+textarea {
     border: 1px solid black;
+    width: 187px;
+    outline: none;
+}
+.div-input-textsareas {
+    width: 80%;
 }
 
-.textareas-container{
+
+.textareas-container {
     display: flex;
     justify-content: space-between;
-    
+    width: 100%;
+    height: 30vh;
+}
+.div-align-btn {
+    width: 80%;
+    display: flex;
+    justify-content: flex-end;
 }
 .input-textarea{
     margin-top: -4.5%;
 }
-#nome-receita{
+#nome-receita {
     border: none;
     outline: none;
     background-color: #fd5c26;
     color: black;
+    width: 187px;
 }
 #nome-receita::placeholder{
     color: black;
    
 }
-#ingredientes{
-height: 85%;
-}
-#ingredientes::placeholder{
-    color: black;
-    
-}
-#ingredientes-aparecer{
-    height: 85%;
-}
-#ingredientes-aparecer::placeholder{
-    color: black;
-}
-#modo-preparo::placeholder{
-    color: black;
-}
-#modo-preparo-aparecer::placeholder{
-    color: black;
-}
+
 .salvar-receita {
     padding: 8px;
     border: 1px solid black;
@@ -143,4 +203,23 @@ height: 85%;
 }
 #procurar-receita::placeholder{
     color: black;
+}
+
+
+@media screen and (max-width:920px){
+    .lista-nav{
+        display: none;
+    }
+    .receitas-hamburguer {
+        display: block;
+    }
+    .container {
+        width: 80%;
+        height: 72vh;
+    }
+}
+@media screen and (max-width:420px){
+    .nav-h1 {
+        font-size: 27px;
+    }
 }
