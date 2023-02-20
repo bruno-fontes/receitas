@@ -222,4 +222,8 @@ textarea {
     .nav-h1 {
         font-size: 27px;
     }
+    .container {
+        width: 91%;
+        height: 60vh;
+    }
 }
